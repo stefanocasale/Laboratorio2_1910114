@@ -28,8 +28,7 @@
     - java -jar Sudoku.jar 001790000400000080000200600000170000060000050000000300300008000080000007000000009
     - La salida debe ser el Sudoku resuelto: 821796543476531982935284671548173296163829754792645318317968425689452137254317869
 
-
-- El programa maneja errores, pero para garantizar su funcionalidad se recomienda que el único parámetro sea una cadena de enteros entre 0 y 9 de exactamente 81 caracteres 
+El programa maneja errores, pero para garantizar su funcionalidad se recomienda que el único parámetro sea una cadena de enteros entre 0 y 9 de exactamente 81 caracteres 
 
 
 # Funcionamiento
