@@ -33,16 +33,22 @@
 
 
 # Funcionamiento
-    - El programa recibe una cadena de 81 caracteres que representa un tablero de Sudoku de 9x9 (los dígitos del 1 al 9 indican celdas fijas, y el '0' representa una celda vacía). Utiliza la técnica de backtracking con poda para encontrar una solución válida.
+    - El programa recibe una cadena de 81 caracteres que representa un tablero de Sudoku de 9x9 (los dígitos 
+    del 1 al 9 indican celdas fijas, y el '0' representa una celda vacía). Utiliza la técnica de backtracking
+    para encontrar una solución válida.
 
     - Posibles salidas:
         - Si el Sudoku tiene solución: Imprime la cadena de 81 caracteres con el tablero resuelto
         - Si el Sudoku no tiene solucion: Imprime "NOSOLUTION"
 
 # Decisiones de Implementación
-    - Representación del tablero: Opté por una matriz 9x9 ya que facilita el acceso a filas, columnas y subtableros, haciendo que sea mas fácil optimizar y hacer el backtracking
+    - Representación del tablero: Opté por una matriz 9x9 ya que facilita el acceso a filas, columnas y
+    subtableros, haciendo que sea mas fácil optimizar y hacer el backtracking
 
-    - Verificar que número podia usar para llenar los "0": Implemente la funcion esValido() que verifica para cada celda si un número seleccionado no se repite en la misma fila, columna o en el subtablero al que pertenece
+    - Verificar que número podia usar para llenar los "0": Implemente la funcion esValido() que verifica
+    para cada celda si un número seleccionado no se repite en la misma fila, columna o en el subtablero al
+    que pertenece
 
-    - Resolución del Sudoku: Se usó la funcion resolver() con backtracking. Se recorre el tablero en orden buscando la primera celda vacía. Verifica los números que pueden ser solución y se llama recursivamente. 
+    - Resolución del Sudoku: Se usó la funcion resolver() con backtracking. Se recorre el tablero en orden
+    buscando la primera celda vacía. Verifica los números que pueden ser solución y se llama recursivamente. 
 
