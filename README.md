@@ -33,9 +33,9 @@
 
 
 # Funcionamiento
-    - El programa recibe una cadena de 81 caracteres que representa un tablero de Sudoku de 9x9 (los dígitos 
-    del 1 al 9 indican celdas fijas, y el '0' representa una celda vacía). Utiliza la técnica de backtracking
-    para encontrar una solución válida.
+    - El programa recibe una cadena de 81 caracteres que representa un tablero de Sudoku de 9x9.
+    - Los dígitos del 1 al 9 indican celdas fijas, y el '0' representa una celda vacía.
+    - Utiliza la técnica de backtracking para encontrar una solución válida.
 
     - Posibles salidas:
         - Si el Sudoku tiene solución: Imprime la cadena de 81 caracteres con el tablero resuelto
