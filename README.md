@@ -30,7 +30,6 @@
 
 El programa maneja errores, pero para garantizar su funcionalidad se recomienda que el único parámetro sea una cadena de enteros entre 0 y 9 de exactamente 81 caracteres 
 
-
 # Funcionamiento
     - El programa recibe una cadena de 81 caracteres que representa un tablero de Sudoku de 9x9.
     - Los dígitos del 1 al 9 indican celdas fijas, y el '0' representa una celda vacía.
@@ -44,10 +43,13 @@ El programa maneja errores, pero para garantizar su funcionalidad se recomienda 
     - Representación del tablero: Opté por una matriz 9x9 ya que facilita el acceso a filas, columnas y
     subtableros, haciendo que sea mas fácil optimizar y hacer el backtracking
 
-    - Verificar que número podia usar para llenar los "0": Implemente la funcion esValido() que verifica
-    para cada celda si un número seleccionado no se repite en la misma fila, columna o en el subtablero al
-    que pertenece
+    - Verificar que número podia usar para llenar los "0": Se implementó la funcion esValido(), comprueba
+    que un número no esté ya presente en la misma fila, en la misma columna ni en el subtablero 3×3 
+    correspondiente. Esto evita que el algoritmo continúe explorando combinaciones que de todas formas 
+    violarían las reglas del Sudoku. Al descartar rápidamente los números no válidos, el espacio de búsqueda
+    se reduce drásticamente y el programa puede encontrar la solución (o determinar que no existe) en un 
+    tiempo razonable, incluso para sudokus con muchas celdas vacías.
 
     - Resolución del Sudoku: Se usó la funcion resolver() con backtracking. Se recorre el tablero en orden
-    buscando la primera celda vacía. Verifica los números que pueden ser solución y se llama recursivamente. 
-
+    buscando la primera celda vacía. Prueba números del 1 al 9, verifica si son válidos con esValido() y se
+    llama recursivamente.
