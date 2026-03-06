@@ -53,3 +53,12 @@ El programa maneja errores, pero para garantizar su funcionalidad se recomienda 
     - Resolución del Sudoku: Se usó la funcion resolver() con backtracking. Se recorre el tablero en orden
     buscando la primera celda vacía. Prueba números del 1 al 9, verifica si son válidos con esValido() y se
     llama recursivamente.
+
+# Tabla de complejidad computacional (Big O)
+
+|         Método         |   Complejidad   |              Descripción
+|------------------------|-----------------|--------------------------------------------------
+| convertirCadenaMatriz	 |   O(81) = O(1)  | Recorre los 81 caracteres una vez, operaciones constantes.
+| esValido	             |   O(27) = O(1)  | Verifica 27 posiciones
+| resolver               |   	O(9ⁿ)      | Resuelve el Sudoku, n es el número de celdas vacías. 
+| convertirMatrizCadena  |   O(81) = O(1)  | Recorre las 81 celdas para contruir la cadena
